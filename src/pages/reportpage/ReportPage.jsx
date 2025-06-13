@@ -15,6 +15,10 @@ export const ReportPage = () => {
         <S.Line />
 
         <S.RankBox>
+          <S.IMAGESSETS>
+            <S.IMAGESS src="/images/Mimage.svg" />
+            <S.IMAGESS src="/images/Simage.svg" />
+          </S.IMAGESSETS>
           <S.ColSBet>
             <S.RankBoxTitle>총 등급</S.RankBoxTitle>
             <S.IconSet>
@@ -31,7 +35,7 @@ export const ReportPage = () => {
                 팔굽혀펴기 등급 : {pushup.grade}
               </S.RankConBoxTitle>
               <S.IconSet>
-                {pushup.image && <S.RankImage src={pushup.image} />}
+                {pushup.image && <S.RankImage2 src={pushup.image} />}
                 {pushup.value && (
                   <S.RankConName>{pushup.value}회</S.RankConName>
                 )}
@@ -45,7 +49,7 @@ export const ReportPage = () => {
                 윗몸일으키기 등급 : {situp.grade}
               </S.RankConBoxTitle>
               <S.IconSet>
-                {situp.image && <S.RankImage src={situp.image} />}
+                {situp.image && <S.RankImage2 src={situp.image} />}
                 {situp.value && <S.RankConName>{situp.value}회</S.RankConName>}
               </S.IconSet>
             </S.ColSBet>
@@ -57,9 +61,9 @@ export const ReportPage = () => {
                 3KM 달리기 등급 : {running.grade}
               </S.RankConBoxTitle>
               <S.IconSet>
-                {running.image && <S.RankImage src={running.image} />}
+                {running.image && <S.RankImage2 src={running.image} />}
                 {running.value && (
-                  <S.RankConName>{running.value}회</S.RankConName>
+                  <S.RankConName>{running.value}</S.RankConName>
                 )}
               </S.IconSet>
             </S.ColSBet>

@@ -22,7 +22,7 @@ export const MAINSOLCONSTANTS = {
   SemiTitle: {
     SemiTItle1: '최근 훈련 피드백',
     SemiTitle2: '오늘 나의 훈련 기록',
-    SemiTitle3: `${name} 님의 성장 그래프`,
+    SemiTitle3: `${name} 태준님의 성장 그래프`,
     plus: '더보기',
   },
   historyBox: {

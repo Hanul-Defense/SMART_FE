@@ -264,6 +264,8 @@ const TrainingService = {
     const res = await instance.get('/api/v1/runnings');
     const data = res.data.data;
 
+    console.log('체크체크 runningData:\n' + JSON.stringify(data, null, 2));
+
     const grouped = {};
 
     data.forEach((item) => {

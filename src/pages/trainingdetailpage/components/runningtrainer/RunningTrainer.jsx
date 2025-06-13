@@ -114,7 +114,7 @@ const RunningTrainer = () => {
         <S.Text>SMART한 시간 측정</S.Text>
 
         <S.StatusText>
-          {time > 0 && !started ? `측정 완료: ${time}초` : `${time}초`}
+          {!started ? `측정 완료: ${time}초` : `${time}초`}
         </S.StatusText>
 
         <S.StartButton onClick={handleTimerButtonClick}>

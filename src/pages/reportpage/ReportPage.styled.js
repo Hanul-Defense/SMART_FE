@@ -32,6 +32,7 @@ export const Line = styled.div`
 `;
 
 export const RankBox = styled.div`
+  position: relative;
   width: 100%;
   height: 122px;
   padding: 1.5rem;
@@ -54,11 +55,40 @@ export const RankBoxTitle = styled.div`
 export const IconSet = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  align-items: center;
+  gap: 0.5rem;
 `;
 
-export const RankImage = styled.img`
+export const RankImage = styled.div`
   width: 25px;
+  height: 25px;
+  background-color: ${({ theme }) => theme.colors.beige01};
+
+  -webkit-mask-image: url(${(props) => props.src});
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+
+  mask-image: url(${(props) => props.src});
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+`;
+
+export const RankImage2 = styled.div`
+  width: 25px;
+  height: 25px;
+  background-color: ${({ theme }) => theme.colors.green01};
+
+  -webkit-mask-image: url(${(props) => props.src});
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+
+  mask-image: url(${(props) => props.src});
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
 `;
 
 export const RankName = styled.div`
@@ -89,4 +119,30 @@ export const RankConBoxTitle = styled.div`
 export const RankConName = styled.div`
   ${({ theme }) => theme.fonts.Subtitle_ExtraBold_16};
   color: ${({ theme }) => theme.colors.black};
+`;
+
+export const IMAGESSETS = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 1.5rem;
+  top: -19px;
+`;
+
+export const IMAGESS = styled.div`
+  width: 80px;
+  height: 80px;
+  background-color: rgba(240, 236, 222, 0.8);
+
+  -webkit-mask-image: url(${(props) => props.src});
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+
+  mask-image: url(${(props) => props.src});
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  z-index: 100;
 `;

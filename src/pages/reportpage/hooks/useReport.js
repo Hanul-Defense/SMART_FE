@@ -79,18 +79,18 @@ const gradeToImage = {
 };
 
 const gradeForPushup = (count) => {
-  if (count >= 60) return '특급';
-  if (count >= 50) return '1급';
-  if (count >= 40) return '2급';
-  if (count >= 30) return '3급';
+  if (count >= 72) return '특급';
+  if (count >= 64) return '1급';
+  if (count >= 56) return '2급';
+  if (count >= 48) return '3급';
   return '불합격';
 };
 
 const gradeForSitup = (count) => {
-  if (count >= 70) return '특급';
-  if (count >= 60) return '1급';
-  if (count >= 50) return '2급';
-  if (count >= 40) return '3급';
+  if (count >= 86) return '특급';
+  if (count >= 78) return '1급';
+  if (count >= 70) return '2급';
+  if (count >= 62) return '3급';
   return '불합격';
 };
 
